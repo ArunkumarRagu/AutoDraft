@@ -19,7 +19,8 @@ def load_knowledge_document(file_path: str) -> list[Document]:
     document = Document(
         page_content=content,
         metadata={
-            "source": path.name
+            "source": path.name,
+						"category": "general_support"
         }
     )
 
